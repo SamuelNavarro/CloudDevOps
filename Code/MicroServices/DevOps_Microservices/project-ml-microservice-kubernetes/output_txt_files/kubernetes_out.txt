@@ -1,0 +1,22 @@
+*************
+./run_kubernetes.sh
+*************
+ernetes$ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "apidemo" already exists
+NAME      READY   STATUS    RESTARTS   AGE
+apidemo   1/1     Running   0          67s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+
+
+***********
+./make_prediction.sh
+***********
+rvice-kubernetes$ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
